@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- learning form controlller which  is used to get the data from the server itself. -->
+    <!-- For receving the  data of form we need a path and this is created in app.js as get-from-data -->
+
+    <!-- Post and Get method use 
+    Get :- server se data mangwane ke liye get ka use hota hai 
+    Post :- Server pe data bhejne ke liye Post method ka use hota hai -->
+
+   <form action="/get-from-data"
+    method="post">
+
+    <input
+    type="text"
+    placeholder="enter your name"
+    name="username"
+    />
+
+    <input
+    type="text"
+    placeholder="enter your email"
+    name="email"
+    />
+
+    <input
+    type="password"
+    placeholder="enter your password"
+    name="password"
+    />
+
+    <button>
+     submit
+    </button>
+    
+   </form>
+   <script src="assests/index.js"></script>
+</body>
+</html>
